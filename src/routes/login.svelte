@@ -14,7 +14,8 @@
 	let password = "";
 
 	$: validUsername = /^[A-Za-z0-9]+$/.test(username);
-	$: validPassword = /^[A-Za-z0-9]+$/.test(password);
+	$: validPassword = true;
+	// $: validPassword = /^[A-Za-z0-9]+$/.test(password);
 	$: submitable = !(validPassword && validUsername);
 
 	$: params = new URLSearchParams({
