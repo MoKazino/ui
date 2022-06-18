@@ -36,7 +36,7 @@
 		address: "-",
 		exchangeId: "-",
 		qrCodeUrl:
-			"https://mokazino.net/api/v1/depositqr/custom?qr=bitcoin3NhxHipGasDoE714c1wA1e2b5VFCDLnh1i",
+			"/api/v1/depositqr/custom?qr=bitcoin3NhxHipGasDoE714c1wA1e2b5VFCDLnh1i",
 		expireTime: Date.now() + 65000,
 		remainingTime: 0
 	};
@@ -57,7 +57,7 @@
 		loadingMajesticBank = true;
 
 		const response = await fetch(
-			`https://mokazino.net/api/v1/external/majesticbank/exchange?receive_curency=${currency}`
+			`/api/v1/external/majesticbank/exchange?receive_curency=${currency}`
 		).catch(async (error) => {
 			createAlert({
 				expireAfter: 8000,
@@ -79,7 +79,7 @@
 			currency: json.from_currency,
 			exchangeId: json.trx,
 			address: json.address,
-			qrCodeUrl: `https://mokazino.net/api/v1/depositqr/custom?qr=${to_currency}${json.address}`,
+			qrCodeUrl: `/api/v1/depositqr/custom?qr=${to_currency}${json.address}`,
 			expireTime: Date.now() + json.expiration * 1000 * 60
 		});
 
@@ -142,7 +142,7 @@
 		<section id="deposit-options">
 			<div id="direct-transfer">
 				<img
-					src={`https://mokazino.net/api/v1/depositqr?nonce=${
+					src={`/api/v1/depositqr?nonce=${
 						$profile?.user?.["currency"] + Date.now()
 					}`}
 					height="256"

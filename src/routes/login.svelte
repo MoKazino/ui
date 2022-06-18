@@ -27,7 +27,7 @@
 
 		console.log(params);
 		const response = await fetch(
-			`https://mokazino.net/api/v1/${registerMode ? "register" : "login"}/json`,
+			`/api/v1/${registerMode ? "register" : "login"}/json`,
 			{
 				headers: {
 					"content-type": "application/x-www-form-urlencoded"

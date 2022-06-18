@@ -5,7 +5,7 @@
 	import { profile, currency, createAlert } from "../stores";
 
 	async function withdraw() {
-		const response = await fetch("https://mokazino.net/api/v1/withdraw", {
+		const response = await fetch("/api/v1/withdraw", {
 			method: "POST",
 			body: new URLSearchParams({
 				amount: (amount * 1e12).toFixed(0),

@@ -4,7 +4,7 @@
 	import { createAlert, profile } from "../stores";
 
 	async function invest() {
-		const response = await fetch("https://mokazino.net/api/v1/invest", {
+		const response = await fetch("/api/v1/invest", {
 			method: "POST",
 			body: new URLSearchParams({
 				amount: (amount * 1e12).toFixed(0)
@@ -19,7 +19,7 @@
 	}
 
 	async function closeInvestment() {
-		const response = await fetch("https://mokazino.net/api/v1/closeinvest");
+		const response = await fetch("/api/v1/closeinvest");
 
 		createAlert({
 			expireAfter: 8000,

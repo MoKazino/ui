@@ -23,7 +23,7 @@
 	});
 
 	async function refreshStats() {
-		const response = await fetch("https://mokazino.net/api/v1/serverstats");
+		const response = await fetch("/api/v1/serverstats");
 		const json = await response.json();
 		stats.set(json);
 	}

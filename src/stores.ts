@@ -32,7 +32,7 @@ currency.subscribe((value) => $currency = value);
 export async function changeCurrency(): Promise<boolean> {
   const newCurrency = $currency === "xmr" ? "btc" : "xmr";
   const response = await fetch(
-    `https://mokazino.net/api/v1/switchcurrency/${newCurrency}/json`,
+    `/api/v1/switchcurrency/${newCurrency}/json`,
     {
       credentials: "include",
     },
@@ -97,7 +97,7 @@ export const profile: Writable<Profile> = writable({
 });
 
 export async function updateProfile(): Promise<void> {
-  const response = await fetch("https://mokazino.net/api/v1/profile", {
+  const response = await fetch("/api/v1/profile", {
     credentials: "include",
   }).catch(() => {});
 

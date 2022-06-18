@@ -24,7 +24,7 @@
 	};
 
 	async function bet(betlo: boolean): Promise<void> {
-		const response = await fetch("https://mokazino.net/api/v1/bet", {
+		const response = await fetch("/api/v1/bet", {
 			method: "POST",
 			body: new URLSearchParams({
 				amount: (amount * 1e12).toFixed(0),

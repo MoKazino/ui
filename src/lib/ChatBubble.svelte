@@ -19,7 +19,7 @@
 	}
 
 	async function* receivedMessages(): AsyncGenerator<string> {
-		const response = await fetch("https://mokazino.net/api/v1/chat/read").catch(() => {});
+		const response = await fetch("/api/v1/chat/read").catch(() => {});
 		if (response) yield await response.text();
 		yield* receivedMessages();
 	}
@@ -36,7 +36,7 @@
 	async function sendMessage(event?: KeyboardEvent) {
 		if (event instanceof KeyboardEvent && event?.key !== "Enter") return;
 
-		const response = await fetch("https://mokazino.net/api/v1/chat/send", {
+		const response = await fetch("/api/v1/chat/send", {
 			method: "POST",
 			body: new URLSearchParams({
 				text: messageInput.value

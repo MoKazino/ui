@@ -6,7 +6,7 @@
 	let clientSeed = $profile.user.clientseed;
 
 	async function saveClientSeed() {
-		const response = await fetch("https://mokazino.net/api/v1/profile_update", {
+		const response = await fetch("/api/v1/profile_update", {
 			method: "POST",
 			body: new URLSearchParams({
 				clientseed: clientSeed
@@ -101,7 +101,7 @@
 				Want to make sure that I've never ever cheated on you?
 				<br />
 				Come and
-				<a href="https://mokazino.net/api/v1/reset_seed">grab the bet history</a>.
+				<a href="/api/v1/reset_seed">grab the bet history</a>.
 				<br />
 				<strong
 					>Keep in mind that visiting this link will revoke your<code>server_key</code>, and reset
