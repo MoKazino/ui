@@ -73,7 +73,7 @@
 		loadingMajesticBank = false;
 
 		const to_currency = json.from_currency === "LTC" ? "litecoin" : "bitcoin";
-
+		
 		Object.assign(majesticBank, {
 			fromCurrency: currency,
 			currency: json.from_currency,
@@ -141,8 +141,9 @@
 
 		<section id="deposit-options">
 			<div id="direct-transfer">
+				<!-- svelte-ignore -->
 				<img
-					src={`/api/v1/depositqr?nonce=${
+					src={`https://mokazino.net/api/v1/depositqr?nonce=${
 						$profile?.user?.["currency"] + Date.now()
 					}`}
 					height="256"
