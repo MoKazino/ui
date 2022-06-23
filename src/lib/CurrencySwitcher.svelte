@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { currency, changeCurrency } from "../stores";
+	import { currency, changeCurrency } from "$lib/stores";
 
 	let loaded = true;
 	let errored = false;

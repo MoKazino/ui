@@ -2,7 +2,7 @@
 	import { goto } from "$app/navigation";
 	import { onMount } from "svelte";
 
-	import { createAlert, loggedIn, updateProfile } from "../stores";
+	import { createAlert, loggedIn, updateProfile } from "$lib/stores";
 
 	let registerMode = false;
 	onMount(() => {
@@ -53,14 +53,14 @@
 			return false;
 		}
 
-		goto("./?login");
+		goto("/?login");
 		return true;
 	}
 </script>
 
 <main id="content">
 	<div id="main-container">
-		<img src="./images/logo.svg" alt="Logo of Mokazino" width="256" height="256" />
+		<img src="/images/logo.svg" alt="Logo of Mokazino" width="256" height="256" />
 
 		<form on:submit={submit}>
 			<input

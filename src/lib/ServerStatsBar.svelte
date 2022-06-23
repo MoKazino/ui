@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { profile } from "../stores";
+	import { profile } from "./stores";
 	import { writable } from "svelte/store";
 
 	const stats = writable({

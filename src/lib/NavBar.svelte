@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { loggedIn } from "../stores";
-	import { onMount } from "svelte";
+import { onMount } from "svelte";
+	import { loggedIn } from "$lib/stores";
 	import CurrencySwitcher from "./CurrencySwitcher.svelte";
 	import ThemeSwitcher from "./ThemeSwitcher.svelte";
 	import { slide } from "svelte/transition";
 	import { sineInOut } from "svelte/easing";
-
+	
 	let innerWidth: number;
 	let logoText = "Mokazino";
 	let showMobileMenu = false;
@@ -20,8 +20,8 @@
 <svelte:window bind:innerWidth on:resize={updateLogoText} />
 
 <nav id="navigation-menu">
-	<a href="./" class="logo">
-		<img src="./images/logo-textless.svg" alt="Mokazino logo" />
+	<a href="/" class="logo">
+		<img src="/images/logo-textless.svg" alt="Mokazino logo" />
 		<p>{logoText}</p>
 	</a>
 

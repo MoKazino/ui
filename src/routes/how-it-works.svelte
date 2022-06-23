@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-	import TextInput from "$lib/TextInput.svelte";
-	import { createAlert, profile, updateProfile } from "../stores";
-
+   import { onMount } from "svelte";
+   import TextInput from "$lib/TextInput.svelte";
+   import { createAlert, profile, updateProfile } from "$lib/stores";
+ 
 	let clientSeed = $profile.user.clientseed;
 
 	async function saveClientSeed() {

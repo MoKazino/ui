@@ -1,14 +1,14 @@
 <script>
 	import { browser } from "$app/env";
 
-	import { loggedIn, profile } from "../stores";
+	import { loggedIn, profile } from "$lib/stores";
 </script>
 
 <main id="content">
 	<div id="main-container">
 		<h1>Invite friends</h1>
 
-		<img src="./images/logo.svg" alt="Logo of Mokazino" width="256" height="256" />
+		<img src="/images/logo.svg" alt="Logo of Mokazino" width="256" height="256" />
 
 		<p>
 			You can invite friends to earn 50% of the house edge on every bet!

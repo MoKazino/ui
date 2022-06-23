@@ -14,7 +14,8 @@
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "next",
+		"@fontsource/material-icons": "^4.5.4",
+		"@sveltejs/adapter-static": "^1.0.0-next.34",
 		"@sveltejs/kit": "next",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
@@ -23,7 +24,6 @@
 		"svelte-check": "^2.2.6",
 		"svelte-preprocess": "^4.10.1",
 		"tslib": "^2.3.1",
-		"typescript": "~4.6.2",
-		"@fontsource/material-icons": "^4.5.4"
+		"typescript": "~4.6.2"
 	}
 }

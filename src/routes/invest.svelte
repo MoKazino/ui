@@ -1,7 +1,7 @@
 <script lang="ts">
 	import NumberInput from "$lib/NumberInput.svelte";
 
-	import { createAlert, profile } from "../stores";
+	import { createAlert, profile } from "$lib/stores";
 
 	async function invest() {
 		const response = await fetch("/api/v1/invest", {

@@ -1,10 +1,11 @@
 <script lang="ts" context="module">
 	import { routeGuard } from "$lib/routeGuard";
-	import type { LoadInput, LoadOutput } from "@sveltejs/kit";
+    import type { LoadEvent, LoadOutput } from "@sveltejs/kit";
+ 
 
-	export async function load({ url }: LoadInput): Promise<LoadOutput> {
-		return await routeGuard({ url });
-	}
+	export async function load({ url }: LoadEvent): Promise<LoadOutput> {
+        return await routeGuard({ url });
+    }
 </script>
 
 <script lang="ts">
@@ -15,7 +16,7 @@
 	import "@fontsource/material-icons";
 	import ChatBubble from "$lib/ChatBubble.svelte";
 
-	import { loggedIn, updateProfile } from "../stores";
+	import { loggedIn, updateProfile } from "$lib/stores";
 	import Alert from "$lib/Alert.svelte";
 	import { onMount } from "svelte";
 	import ServerStatsBar from "$lib/ServerStatsBar.svelte";

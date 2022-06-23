@@ -1,10 +1,10 @@
 <script>
-	import { loggedIn } from "../stores";
+	import { loggedIn } from "$lib/stores";
 </script>
 
 <main id="content">
 	<div id="main-container">
-		<img src="./images/logo.svg" alt="Logo of Mokazino" width="256" height="256" />
+		<img src="/images/logo.svg" alt="Logo of Mokazino" width="256" height="256" />
 
 		<p>
 			You're about to enter the simplest, most private, probably fair and community-funded casino!
@@ -12,23 +12,23 @@
 
 		{#if !$loggedIn}
 			<div id="join-mokazino">
-				<a href="./login?register=true" class="button-like accent">Sign up</a>
-				<a href="./login" class="button-like">Log in</a>
+				<a href="/login?register=true" class="button-like accent">Sign up</a>
+				<a href="/login" class="button-like">Log in</a>
 			</div>
 		{/if}
 
 		<hr />
 		<div class="links">
-			<a rel="external" target="_blank" href="./message.txt">
+			<a rel="external" target="_blank" href="/message.txt">
 				<span class="material-icons" style:color="var(--text-color)">article</span>
 				message.txt</a
 			>
 			<a rel="external" target="_blank" href="https://t.me/MoKazino">
-				<img src="./images/brands/telegram.svg" width="24" alt="Twitter logo" />
+				<img src="/images/brands/telegram.svg" width="24" alt="Twitter logo" />
 				t.me/MoKazino</a
 			>
 			<a rel="external" target="_blank" href="https://twitter.com/MoKazino">
-				<img src="./images/brands/twitter.svg" width="24" alt="Twitter logo" />
+				<img src="/images/brands/twitter.svg" width="24" alt="Twitter logo" />
 				twitter.com/MoKazino</a
 			>
 		</div>

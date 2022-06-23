@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { alerts, removeAlert } from "../stores";
+	import { alerts, removeAlert } from "./stores";
 	import { scale } from "svelte/transition";
 </script>
 

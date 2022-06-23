@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { slideRight } from "$lib/transitions";
 	import NumberInput from "$lib/NumberInput.svelte";
-	import { profile, createAlert } from "../stores";
+	import { profile, createAlert } from "$lib/stores";
 
 	interface Bet {
 		win: boolean | null;
@@ -112,7 +112,7 @@
 				</div>
 			{/if}
 
-			<img src="./images/logo.svg" alt="Logo of Mokazino" width="256" height="256" />
+			<img src="/images/logo.svg" alt="Logo of Mokazino" width="256" height="256" />
 
 			<NumberInput
 				min={0}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { profile, currency, createAlert } from "../stores";
+	import { profile, currency, createAlert } from "$lib/stores";
 	import { scale, slide } from "svelte/transition";
 	import { onDestroy } from "svelte";
 

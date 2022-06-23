@@ -2,7 +2,7 @@
 	import NumberInput from "$lib/NumberInput.svelte";
 	import TextInput from "$lib/TextInput.svelte";
 
-	import { profile, currency, createAlert } from "../stores";
+	import { profile, currency, createAlert } from "$lib/stores";
 
 	async function withdraw() {
 		const response = await fetch("/api/v1/withdraw", {
