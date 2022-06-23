@@ -15,7 +15,7 @@
 			<br />
 			No matter if they win or lose - you earn. Here is your personal, unique link.
 			<br />
-			When somebody uses it to register you will earn monero!
+			When somebody uses it to register, you will earn monero!
 			<br />
 			<code>{browser && location.origin + `/?ref=${$profile.user.id}`}</code>
 		</p>

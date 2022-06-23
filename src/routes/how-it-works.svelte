@@ -30,7 +30,7 @@
 <main id="content">
 	<div id="main-container">
 		<section id="how-it-works">
-			<h1>Mokazino Dice is probably fair.</h1>
+			<h1>MoKazino Dice is provably fair</h1>
 			<hr />
 
 			Numbers are generated using 4 strings (including one decimal representation of an integer):
@@ -39,13 +39,13 @@
 			<ul>
 				<li>
 					<span>
-						<code>client_seed</code> - This one is controlled by you, you can change it in the settings
+						<code>client_seed</code> - This one is controlled by you. It can be changed in the settings
 					</span>
 				</li>
 				<li>
 					<span>
 						<code>server_seed</code> - This is the seed that server generates for you, it is kept secret
-						until you decide to reveal it. Its length is generated randomly.
+						until you decide to reveal it, its length is generated randomly.
 					</span>
 				</li>
 				<li>
@@ -57,8 +57,8 @@
 			</ul>
 			<br />
 			<p>
-				Then they're combined into a string:<code>{"${client_seed}:{server_seed}:${nonce}"}</code>.
-				This string then gets hashed using <code>sha512</code>. After that first 8 characters are
+				Then they're combined into a string: <code>{"${client_seed}:{server_seed}:${nonce}"}</code>.
+				This string then gets hashed using <code>sha512</code>. After that, the first 8 characters are
 				picked, parsed to int and then modulo of this number is returned.<br />
 			</p>
 			<br />
@@ -98,9 +98,7 @@
 		<hr />
 		<section id="getting-scammed">
 			<p>
-				Want to make sure that I've never ever cheated on you?
-				<br />
-				Come and
+				Want to make sure that I've never ever cheated you? Come and 
 				<!-- svelte-ignore -->
 				<a href="https://mokazino.net/api/v1/reset_seed">grab the bet history</a>.
 				<br />

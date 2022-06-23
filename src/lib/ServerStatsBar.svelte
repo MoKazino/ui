@@ -32,7 +32,7 @@
 </script>
 
 <div id="server-stats">
-	<span>Max profit: {$stats.maxprofit}</span>
+	<span>Max. profit: {$stats.maxprofit}</span>
 	<span>Reserved balance: {$stats.userbalance}</span>
 	<span>Server balance: {$stats.serverbalance}</span>
 </div>

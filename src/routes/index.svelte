@@ -7,7 +7,7 @@
 		<img src="/images/logo.svg" alt="Logo of Mokazino" width="256" height="256" />
 
 		<p>
-			You're about to enter the simplest, most private, probably fair and community-funded casino!
+			You're about to enter the simplest, most private, provably fair and community-funded casino!
 		</p>
 
 		{#if !$loggedIn}

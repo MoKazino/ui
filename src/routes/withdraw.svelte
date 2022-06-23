@@ -34,10 +34,10 @@
 		<h1>Withdraw your {$currency.toUpperCase()}</h1>
 		<hr />
 		<p>
-			<strong>Withdrawals</strong> are automatic, and instant, however - due to limitation in the monero
-			rpc client, we are not able to substract fee amount from withdrawal. To solve the issue we take
-			0.00002 xmr from the amount, then we add the remaining amount to your balance. In bitcoin the fee
-			is deducted from withdrawal amount.
+			<strong>Withdrawals</strong> are automatic and instant, however, due to limitations in the Monero
+			RPC Client, we are not able to substract the fee amount from withdrawal. To solve the issue, we take
+			0.00002 XMR from the amount, then we add the remaining amount to your balance. In Bitcoin, the fee
+			is deducted from the withdrawal amount.
 		</p>
 
 		<form id="withdraw-form" on:submit|preventDefault>

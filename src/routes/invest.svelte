@@ -38,11 +38,10 @@
 <main id="content">
 	<div id="main-container">
 		<section id="introduction">
-			<h1>Yes! You can become an investor!</h1>
+			<h1>Invest</h1>
 			<hr />
 			<p>
-				This will allow you to have a part in the site profits (and losses). Just like it would be
-				your own casino!
+				This will allow you to have a part in the site profits (and losses), like owning a casino!
 			</p>
 		</section>
 
@@ -53,11 +52,10 @@
 			<ul>
 				<li>
 					<span>
-						To get started you need to have at least 0.001 XMR/0.00001 BTC in your balance.</span
-					>
+						To get started, you need to have at least 0.001 XMR/0.00001 BTC in your balance.</span>
 				</li>
 				<li>
-					<span>After investing you will see a change in the in your investment every minute.</span>
+					<span>After investing, you will see a change in your investment every minute.</span>
 				</li>
 				<li>
 					<span>You can close your investment any time you want.</span>
@@ -71,7 +69,7 @@
 			<h3>Fees</h3>
 			<ul>
 				<li>
-					<span>There is a 1 % profit fee took on every bet.</span>
+					<span>There is a 1 % profit fee taken from every bet.</span>
 				</li>
 			</ul>
 		</section>
